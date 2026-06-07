@@ -245,11 +245,18 @@ export default function AuthPortal({ currentTheme, onLoginSuccess, initialMode =
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full translate-x-8 -translate-y-8 filter blur-xl pointer-events-none" />
           
           <div className="space-y-6 relative z-10">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center font-serif text-slate-900 font-bold text-sm">
-                P
+            <div className="flex items-center gap-2.5">
+              {/* Flag of Senegal logo in Auth portal */}
+              <div className="w-10 h-7 rounded-md overflow-hidden flex border border-white/20 relative animate-pulse" title="Drapeau du Sénégal">
+                <div className="w-1/3 h-full bg-[#00853F]" />
+                <div className="w-1/3 h-full bg-[#FDEF42] flex items-center justify-center relative">
+                  <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-[#00853F] absolute">
+                    <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                  </svg>
+                </div>
+                <div className="w-1/3 h-full bg-[#E31B23]" />
               </div>
-              <span className="text-sm font-bold uppercase tracking-widest text-amber-500 font-mono">
+              <span className="text-sm font-bold uppercase tracking-widest text-[#FDEF42] font-mono">
                 PAMECAS FINANCE
               </span>
             </div>

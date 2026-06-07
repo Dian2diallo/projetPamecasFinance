@@ -89,16 +89,6 @@ export default function Header({
         {/* À droite : logo carré "GUF-PME" (petit, fond blanc) + texte 🏢 Mon espace PME cliquable */}
         <div className="flex items-center gap-3">
           
-          {/* Theme switcher integrated in a minimalist way in topbar */}
-          <button 
-            onClick={() => setTheme(currentTheme === "green" ? "blue" : "green")}
-            style={{ contentVisibility: "auto" }}
-            className="hidden sm:flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] bg-white/10 hover:bg-white/20 transition-all font-semibold cursor-pointer text-amber-300"
-            title="Changer de design"
-          >
-            🎨 Mode {currentTheme === "green" ? "Vert" : "Bleu"}
-          </button>
-
           <div className="flex items-center gap-2">
             
             {/* Logo carré "GUF-PME" (petit, fond blanc) */}
@@ -157,10 +147,14 @@ export default function Header({
           className="flex items-center gap-2.5 cursor-pointer hover:opacity-95 transition-opacity"
         >
           {/* Symbol of Senegal Flag linked to PAMECAS green structure */}
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#006633] to-[#1a5c2a] flex items-center justify-center text-white relative shadow-sm border border-[#006633]/10">
-            <span className="font-extrabold text-xs tracking-tighter leading-none text-center">PAM<br /><span className="text-[9px] text-amber-300">ECAS</span></span>
-            {/* Subtle floating star */}
-            <span className="absolute top-0.5 right-0.5 text-[7px] text-amber-300">★</span>
+          <div className="w-12 h-8 rounded-md overflow-hidden flex shadow-md border border-slate-200/50 relative hover:scale-105 transition-transform duration-200" title="Drapeau du Sénégal">
+            <div className="w-1/3 h-full bg-[#00853F]" />
+            <div className="w-1/3 h-full bg-[#FDEF42] flex items-center justify-center relative">
+              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-[#00853F] absolute animate-pulse">
+                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+              </svg>
+            </div>
+            <div className="w-1/3 h-full bg-[#E31B23]" />
           </div>
           
           <div className="flex flex-col select-none justify-center">

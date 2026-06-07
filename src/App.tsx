@@ -188,9 +188,18 @@ export default function App() {
           
           {/* Logo & Contact details */}
           <div className="space-y-3">
-            <span className="text-xl font-bold tracking-tight text-white font-sans flex items-center gap-2 justify-center md:justify-start">
-              <span className="w-6 h-6 rounded-full bg-amber-500 flex items-center justify-center font-serif text-slate-900 font-bold text-xs">P</span>
-              PAMECAS <span className="text-amber-500 text-xs font-mono font-bold">FINANCE SÉNÉGAL</span>
+            <span className="text-xl font-bold tracking-tight text-white font-sans flex items-center gap-2.5 justify-center md:justify-start">
+              {/* Flag of Senegal logo in footer */}
+              <div className="w-9 h-6 rounded-sm overflow-hidden flex border border-white/20 relative" title="Drapeau du Sénégal">
+                <div className="w-1/3 h-full bg-[#00853F]" />
+                <div className="w-1/3 h-full bg-[#FDEF42] flex items-center justify-center relative">
+                  <svg viewBox="0 0 24 24" className="w-3 h-3 fill-[#00853F] absolute">
+                    <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                  </svg>
+                </div>
+                <div className="w-1/3 h-full bg-[#E31B23]" />
+              </div>
+              PAMECAS <span className="text-amber-400 text-xs font-mono font-bold">FINANCE SÉNÉGAL</span>
             </span>
             <p className="text-xs text-emerald-100/90 max-w-sm leading-relaxed">
               Institution coopérative de microfinance du Sénégal, agréée par le Ministère de l’Énergie et des Finances. Épargne sécurisée et crédit de proximité.
