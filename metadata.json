@@ -1,0 +1,6 @@
+{
+  "name": "PAMECAS Mobile",
+  "description": "Application officielle PAMECAS pour l'épargne, le crédit et les services financiers au Sénégal. Inclut un simulateur de prêt interactif, un tableau de bord et un assistant financier IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
